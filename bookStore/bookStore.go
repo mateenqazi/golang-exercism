@@ -5,6 +5,23 @@ import (
 	"math"
 )
 
+/*
+
+To try and encourage more sales of different books from a popular 5 book series, a bookshop has decided to offer discounts on multiple book purchases.
+
+One copy of any of the five books costs $8.
+
+If, however, you buy two different books, you get a 5% discount on those two books.
+
+If you buy 3 different books, you get a 10% discount.
+
+If you buy 4 different books, you get a 20% discount.
+
+If you buy all 5, you get a 25% discount.
+
+Note that if you buy four books, of which 3 are different titles, you get a 10% discount on the 3 that form part of a set, but the fourth book still costs $8.
+*/
+
 func main() {
 	booking := []int{2, 2, 3, 4, 4, 4, 5, 5}
 	discounts := map[int]int{
