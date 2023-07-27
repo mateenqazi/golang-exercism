@@ -11,7 +11,6 @@ func main() {
 
 	input1 := sortedString(getInputFromUser("first"))
 	input2 := sortedString(getInputFromUser("second"))
-
 	fmt.Printf("Both string are anagram %v \n", isAnagram(input1, input2))
 }
 
@@ -26,12 +25,10 @@ func getInputFromUser(s string) string {
 
 func sortedString(s string) string {
 	runes := []rune(s)
-
 	sort.Slice(runes, func(i, j int) bool {
 		return runes[i] < runes[j]
 	})
 	sortedString := string(runes)
-
 	return sortedString
 }
 
