@@ -18,7 +18,6 @@ func main() {
 			newValue += string(value)
 		}
 	}
-
 	newString = strings.Split(newValue, " ")
 
 	for _, value := range newString {
@@ -28,7 +27,6 @@ func main() {
 		} else {
 			wordCount[value] = 1
 		}
-
 		fmt.Println(val, ok)
 	}
 
